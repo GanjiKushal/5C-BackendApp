@@ -27,14 +27,17 @@ http://localhost:8080/alldata?sortby=""
 http://localhost:8080/friend/:username
 --You will get the friends data of user
 username passed as params
+--Eg:http://localhost:8080/friend/GanjiKushal
 
 4.PUT API
 http://localhost:8080/update/:username
 --You can update the data of the user
-username given as param
+--username given as param
+--Eg:http://localhost:8080/update/GanjiKushal
 
 5.DELETE API
 http://localhost:8080/delete/:username
 --You can delete the user.
-username given as param
+--username given as param
+--Eg:http://localhost:8080/update/GanjiKushal
 
