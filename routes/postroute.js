@@ -8,7 +8,7 @@ route2.use(express.json())
 // route2.get('/', async (req, res) => {
 //     res.send("Hello from route2")
 // })
-//Post API starts here
+//Post API starts here, you can add the user
 route2.post('/add/:username', async (req, res) => {
     const result = await User.find(req.params)
     //user checking

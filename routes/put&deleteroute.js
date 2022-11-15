@@ -3,7 +3,7 @@ const route3 = express.Router()
 const User = require('../models/schema')
 route3.use(express.json())
 
-//PUT API Starts here
+//PUT API Starts here, you can update the data of the user
 route3.put('/update/:username', async(req,res)=>{
     try {
         const result=await User.updateOne(req.params,req.body)
@@ -17,7 +17,7 @@ route3.put('/update/:username', async(req,res)=>{
         
     }
 })
-//DELETE API Starts here
+//DELETE API Starts here, yu can delete the user here
 route3.delete('/delete/:username', async(req,res)=>{
     try {
         const result=await User.findOneAndDelete(req.params)

@@ -8,6 +8,7 @@ route1.use(express.json())
 // route1.get('/', async (req, res) => {
 //     res.send("Hello from Router")
 // })
+//This is for getting data , you can check alldata or you can give required querys to get data
 route1.get('/alldata', async(req,res)=>{
     try {
         const data=await User.find(req.query).sort([[req.query.sortby]])
@@ -23,6 +24,8 @@ route1.get('/alldata', async(req,res)=>{
         })
     }
 })
+
+//This GET API is for checking friends list of User
 route1.get('/friend/:username', async(req,res)=>{
     try {
         const data=await FriendSchema.find(req.params)
