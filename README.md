@@ -39,5 +39,5 @@ http://localhost:8080/update/:username
 http://localhost:8080/delete/:username
 --You can delete the user.
 --username given as param
---Eg:http://localhost:8080/update/GanjiKushal
+--Eg:http://localhost:8080/delete/GanjiKushal
 
