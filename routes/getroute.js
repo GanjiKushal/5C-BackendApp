@@ -8,7 +8,6 @@ route1.use(express.json())
 // route1.get('/', async (req, res) => {
 //     res.send("Hello from Router")
 // })
-
 route1.get('/alldata', async(req,res)=>{
     try {
         const data=await User.find(req.query).sort([[req.query.sortby]])
